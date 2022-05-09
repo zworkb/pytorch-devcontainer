@@ -2,23 +2,22 @@
 
 ## installation
 
-Prinzipiell gibts 4 Betriebsmodi fuer vscode:
+here of interest are 4 modes in vscode:
 
-- local/local: das ist der normale Modus, wie wir ihn kennen
-- local/container: vscode in einem lokalen Docker Container
-- ssh/"local": vscode per ssh auf einem Server, ssh-key muss funktionieren, sodass man sich ohne pwd einloggen kann. Man kann dann auf dem Server Files und Directories oeffnen, wie man es lokal gewohnt ist.
-- ssh/container: analog kann man auf dem Server einen Container oeffnen/erstellen, wie man es lokal auch tut.
+- local/local: normal mode as we know it
+- local/container: vscode in a local Docker container, as specified in devcontainer.json/Dockerfile
+- ssh/"local": vscode per ssh on Server, ssh-key must be exchanged, so that you can login without pwd. you then can open files and directories on server exactly as on the local machine.
+- ssh/container: you can open/create the Docker container on the ssh-server as specified in devcontainer.json/Dockerfile.
 
 ### local container
 
-- auf >< symbol klicken und "reopen in container" bzw "rebuild container" anklicken
+- click on >< symbol  and select "reopen in container" or "rebuild container" 
 
 ### remote container
 
-- darauf achten, dass man sich ohne passwort auf den remote server einloggen kann
-- auf >< symbol klicken und "connect to host..." waehlen
-- auf host das gewuenschte Projekt oeffnen
-- auf >< klicken und "reopen in container"
+- take care that ssh keys are exchanged
+- click >< symbol  and select "connect to host..." + enter hostname or ip-address
+- open project dir on host
+- click ><  and select "reopen in container"
 
-mit Klick auf >< kann man mit "reopen in container" und "reopen in local filesystem" zwischen Container und "Normalbetrieb" wechseln
-
+with click on >< you can with selecting "reopen in container" and "reopen in local filesystem" switch between container and normal mode
