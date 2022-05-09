@@ -16,7 +16,13 @@ here of interest are 4 modes in vscode:
 ### remote container
 
 - take care that ssh keys are exchanged
+- take care that docker runs on server in user mode
+    ```sh
+    sudo usermod -aG docker $USER
+    ```
 - click >< symbol  and select "connect to host..." + enter hostname or ip-address
+    - if nothing is 
+- git clone this repo on the ssh server (either with ssh or using the shell in vscode which already runs on server)
 - open project dir on host
 - click ><  and select "reopen in container"
 
