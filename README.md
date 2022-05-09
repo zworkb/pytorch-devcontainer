@@ -31,3 +31,8 @@ with click on >< you can with selecting "reopen in container" and "reopen in loc
 
 now that the container should run locally/on ssh server, open `init.ipynb` in order to test if everything is set up correctly, if you have cuda on you host, you should see your GPU listed
 
+Also you can check the GPU with 
+```sh
+nvitop
+```
+

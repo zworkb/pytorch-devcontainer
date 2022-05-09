@@ -17,4 +17,5 @@ RUN apt-get update \
 
 # Install python stuff
 RUN conda install -y numpy jupyter matplotlib pandas sympy
+RUN pip install nvitop
 
