@@ -21,3 +21,8 @@ here of interest are 4 modes in vscode:
 - click ><  and select "reopen in container"
 
 with click on >< you can with selecting "reopen in container" and "reopen in local filesystem" switch between container and normal mode
+
+## test it
+
+now that the container should run locally/on ssh server, open `init.ipynb` in order to test if everything is set up correctly, if you have cuda on you host, you should see your GPU listed
+
